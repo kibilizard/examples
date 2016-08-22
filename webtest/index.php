@@ -291,9 +291,6 @@
 		str='',
 		holst = document.getElementById('holst'),
 		context = holst.getContext("2d");
-		//context.fillRect(50, 25, 150, 100);
-		//alert(holst);
-		//alert(arr+" "+arr[1]);
 		for(var i=0; i<arr.length; i++)
 		{
 			str += arr[i].value+" ";
@@ -411,12 +408,8 @@
 			}
 		}
 		histograf();
-		linegraf();
 		document.getElementById('line').onclick = function() {linegraf();}
 		document.getElementById('histo').onclick = function() {histograf();}
-		//context.fillText("x", 248, 43);
-		//context.fillText("y", 58, 165);
-		//alert(str);
 	}
 	window.onload = function () {
 		navigate('list.php');
@@ -464,17 +457,5 @@
 		</div>
 		<div id="scene">
 		</div>
-		<script type="text/javascript">
-function twotoggle(obj){
-	var a = document.getElementById('one'),
-	b = document.getElementById('two');
-	if (b == obj)
-	{
-		b = a;
-	}
-	if (b.style.display == 'none')  b.style.display = '';
-	else b.style.display = 'none';
-	}
-</script>
 	</body>
 </html>
